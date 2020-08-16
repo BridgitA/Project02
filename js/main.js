@@ -1,5 +1,7 @@
 $(document).ready(()=>{
     $("#submit").click(()=>{
-        alert('clicked!')
+        let userInput = $("#search").val()
+        alert(userInput)
     });
+    
 });
