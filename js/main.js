@@ -1,21 +1,11 @@
-
 function getData(){
-
-    var input = $("#search").val()
-    
-
-    var xhr = $.get("https://api.giphy.com/v1/gifs/search?api_key=rLYdhrgwH4Bt3A5luRaleol4AHs891pb&q=dogs&limit=30");
-
-    xhr.done(function(response) { console.log("success got data", response); 
-
-    var giffs = response.data
-
-    for(i in giffs){
-        $('.inner').append("<img src="+giffs[i].images.original.url+">")
-    }
-
-});
-
+    $(".inner").empty();
+    var input = $('#search').val();
+    $.get('http://api.giphy.com/v1/gifs/search?q='+input+'&api_key=rLYdhrgwH4Bt3A5luRaleol4AHs891pb&limit=30', function(response) {
+       
+        for(i = 0; response.data.length; i++){
+            $('.inner').append("<img src="+response.data[i].images.original.url+">")
+        }
+    }) 
 }
-
 
