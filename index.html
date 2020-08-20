@@ -3,13 +3,14 @@
 <html>
     <head>
         <title>Giphy Search</title>
-        <link rel="stylesheet" type="text" href="css/style.css" >
+        <link rel="stylesheet" href="css/style.css" >
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
     </head>
     <body>
+        <header>
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -21,17 +22,17 @@
                 </ul>
             </div>
         </nav>
+        </header>
+        <main>
         <div class="container">
             <input id="search" type="search" placeholder="Search..." />
             <button id="submit" onclick="getData()">Submit</button>
             <div class="inner"></div>
-        </div>
-        <footer>
-            <div><br>
-              <p>&copy;2020 Powered by Giphy</p>
-
-            </div>
-          </footer>
+        </div>  
+        </main>  
+        <footer>    
+              <p> Copyright &copy; <script>document.write(new Date().getFullYear());</script> Powered by Giphy</p>
+          </footer>  
     </body>
 
 </html>
