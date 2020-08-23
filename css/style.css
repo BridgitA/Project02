@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital@1&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -19,12 +20,18 @@ nav {
   color: white;
 }
 
-.gif-box {
-  margin: 0.5rem;
-  display: inline-block;
-  border: 1px solid black;
-  height: auto;
-  width: auto;
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
 }
 
 img {
@@ -35,7 +42,7 @@ img {
 
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 2.2rem;
   background-color: #333;
   color: #fff;
   position: fixed;

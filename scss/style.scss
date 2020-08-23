@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital@1&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -15,13 +16,15 @@ nav{
     padding: 20px;
     color: white;
 }
-.gif-box {
-    margin: 0.5rem;
-    display: inline-block;
-    border: 1px solid black;
-    height: auto;
-    width: auto;
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
 }
+
 img{
     height: 350px;
     width: 350px;
@@ -29,7 +32,7 @@ img{
 } 
 footer{
     text-align: center;
-    padding: 20px;
+    padding: 2.2rem;
     background-color: #333;
     color: #fff;
     position: fixed;
