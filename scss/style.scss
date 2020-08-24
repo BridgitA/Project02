@@ -12,9 +12,20 @@ body{
     min-height: 100vh;
     text-align: center;
 }
+header, .navbar-header, nav{
+    display: flex;
+    align-items: center;
+}
+header{
+    justify-content: space-between;
+}
 nav{
     padding: 20px;
-    color: white;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .flex-container{
     display: flex;
@@ -31,6 +42,16 @@ img{
     width: 350px;
     display: block;
 } 
+@media screen and (max-width:320px){
+    header{
+        height: 100px;
+        width: 320px;
+        text-align: center;
+    }
+    nav div a{
+        text-align: center;
+    }
+}
 footer{
     text-align: center;
     padding: 2.2rem;
