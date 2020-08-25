@@ -77,8 +77,10 @@ img {
     width: 320px;
     text-align: center;
   }
-  nav div a {
-    text-align: center;
+  .navbar-brand {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
