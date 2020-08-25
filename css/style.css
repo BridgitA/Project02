@@ -71,19 +71,6 @@ img {
   display: block;
 }
 
-@media screen and (max-width: 320px) {
-  header {
-    height: 100px;
-    width: 320px;
-    text-align: center;
-  }
-  .navbar-brand {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 footer {
   text-align: center;
   padding: 2.2rem;
@@ -93,4 +80,18 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+
+@media screen and (max-width: 320px) {
+  header {
+    height: 100px;
+    width: 320px;
+    text-align: center;
+   
+  }
+  .navbar-brand {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
